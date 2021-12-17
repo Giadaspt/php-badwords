@@ -21,7 +21,7 @@
   var_dump($_GET);
  
   $nuovoParagrafo = str_replace( $parola, '***',  $paragrafo);
-  $nuovoParagrafoDue = str_replace( $parolaDue, '***',  $paragrafo);
+  $nuovoParagrafoDue = str_replace( $parolaDue, '***',   $nuovoParagrafo);
  
    $modifica = strpos($paragrafo, $parolaDue);
 ?>
