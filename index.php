@@ -14,7 +14,13 @@
   Dunque è un Fantasma, senza discussione. - <br/>
   E pure lui se mise a pecorone.';
 
+  // echo str_replace('pecorone', '***', $paragrafo);
 
+  $parola = $_GET['parola'];
+  var_dump($_GET);
+  $modifica = strpos($paragrafo, $parola);
+ 
+  
 ?>
 
 <!DOCTYPE html>
@@ -25,11 +31,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<body>
+ 
+<body> 
   <h2> <?php echo  $titolo ?> </h2>
   <p> <?php echo $paragrafo ?></p>
   <p> La poesia è lunga <?php echo strlen($paragrafo) ?> caratteri </p>
-  
+  <p> parola da nascondere: <?php echo $_GET['parola']?> </p>
+  <p><?php echo str_replace($_GET['parola'], '***', $paragrafo) ?></p>
+  <p> Con la parola censurata la poesia è lunga: <?php echo $modifica ?> caratteri </p>
 </body>
 </html>
 
