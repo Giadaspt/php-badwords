@@ -21,7 +21,7 @@
   var_dump($_GET);
  
   $nuovoParagrafo = str_replace( $parola, '***',  $paragrafo);
-  $nuovoParagrafoDue = str_replace( $parola, '***',  $paragrafo);
+  $nuovoParagrafoDue = str_replace( $parolaDue, '***',  $paragrafo);
  
    $modifica = strpos($paragrafo, $parolaDue);
 ?>
@@ -41,7 +41,7 @@
   <p> La poesia è lunga <?php echo strlen($paragrafo) ?> caratteri </p>
   <p> parola da nascondere: <?php echo $_GET['parola']?> e <?php echo $_GET['parolaDue']?> </p>
   <p> <?php echo $nuovoParagrafoDue ?> </p>
-  <p> Con la parola censurata la poesia è lunga: <?php echo strlen( $nuovoParagrafoDue) ?> caratteri </p>
+  <p> Con la parola censurata la poesia è lunga:  <?php echo strlen( $nuovoParagrafoDue) ?> caratteri </p>
 </body>
 </html>
 
