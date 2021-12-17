@@ -14,7 +14,7 @@
   Dunque è un Fantasma, senza discussione. - <br/>
   E pure lui se mise a pecorone.';
 
-  // echo str_replace('pecorone', '***', $paragrafo);
+  // parola che vengono censurate sono pecorone e Fantasma;
 
   $parola = $_GET['parola'];
   $parolaDue = $_GET['parolaDue'];
@@ -40,7 +40,8 @@
   <p> <?php echo $paragrafo ?></p>
   <p> La poesia è lunga <?php echo strlen($paragrafo) ?> caratteri </p>
   <p> parola da nascondere: <?php echo $_GET['parola']?> e <?php echo $_GET['parolaDue']?> </p>
-  <p> <?php echo $nuovoParagrafoDue ?> </p>
+  <h3>Censura:</h3>
+  <p>  <?php echo $nuovoParagrafoDue ?> </p>
   <p> Con la parola censurata la poesia è lunga:  <?php echo strlen( $nuovoParagrafoDue) ?> caratteri </p>
 </body>
 </html>
